@@ -17,25 +17,25 @@ Berikut beberapa framework yang ada di folder `apps` :
 - [`docs`](#home)
   [docs.merawathafalan.my.id](docs.merawathafalan.my.id) dibangun dengan [Docusaurus](https://docusaurus.io/)
 
-### Home
+## Home
 
 [merawathafalan.my.id](merawathafalan.my.id)
 
 Halaman ini merupakan tampilan depan.
 
-### App
+## App
 
 [app.merawathafalan.my.id](app.merawathafalan.my.id)
 
 App adalah bagian utama aplikasi berjalan
 
-### API
+## API
 
 [dev.merawathafalan.my.id](dev.merawathafalan.my.id)
 
 API dikhususkan pada subdomain ini untuk membuatnya tetap rapi. Utamanya saat terjadi perubahan versi.
 
-### Docs
+## Docs
 
 [docs.merawathafalan.my.id](docs.merawathafalan.my.id)
 
