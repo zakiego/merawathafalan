@@ -38,7 +38,7 @@ https://dev.merawathafalan.my.id/api/v1/sambung-ayat?amount=3&mode=surah&select=
 
 ### Response
 
-Soal ada pada bagian `results` berbentuk array. Jawaban yang benar dari setiap pilihan adalah yang memiliki value `1`.
+Soal ada pada bagian `results` berbentuk array. Jawaban yang benar dari setiap `option` adalah yang memiliki value `1`.
 
 ```json
 {
