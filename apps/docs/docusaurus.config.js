@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Merawat Hafalan",
-  tagline: "Dinosaurs are cool",
+  tagline: "Menghafal sekali. Menjaganya sampai mati.",
   url: "https://docs.merawathafalan.my.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -23,9 +23,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/zakiego/merawathafalan/tree/main/apps/docs/",
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +57,7 @@ const config = {
             position: "left",
             label: "Dokumentasi",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             type: "docsVersionDropdown",
             position: "right",
@@ -111,8 +112,12 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Merawat Hafalan.`,
+        copyright: `Copyright © 2021 - ${new Date().getFullYear()} Merawat Hafalan.`,
       },
+      // image: "img/docusaurus.png",
+      // twitterImage: "img/docusaurus.png",
+      image:
+        "https://mieeuwqnxldfwsnwwovq.supabase.in/storage/v1/object/public/public/meta/banner.png",
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
