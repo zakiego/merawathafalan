@@ -2,34 +2,26 @@
 sidebar_position: 1
 ---
 
-# Pendahuluan
+# 😉 Pendahuluan
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Salam. Semoga Allah selau menjaga kita.
 
-## Getting Started
+Menjadi penghafalan AL-Quran (baik itu sepenuhnya atau beberapa bagiannya saja) adalah tugas yang berat. Sekali menghafal sebuah ayat, maka amanah yang ada di pundak untuk merawat hafalan tersebut berlaku sepanjang hayat, sampai mati.
 
-Get started by **creating a new site**.
+## API
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Merawat Hafalan menyediakan rest API yang bisa digunakan developer untuk membuat kuis Al-Qur'an.
 
-## Generate a new site
+API yang tersedia saat ini:
 
-Generate a new Docusaurus site using the **classic template**:
+- [Sambung Ayat](/docs/api/sambung-ayat)
 
-```shell
-npm init docusaurus@latest my-website classic
-```
+API yang akan datang:
 
-## Start your site
+- Ayat Sebelumnya
+- Tebak Surah
+- Tebak Juz
 
-Run the development server:
+## Kontak
 
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
+Project ini berumur sangat muda dan masih dalam tahap pengembangan. Jika ada saran dan masukan, saya sangat senang untuk mendengarnya. Mari berkoneksi di [Twitter](https://twitter.com/prasastipagi) atau [LinkedIn](https://www.linkedin.com/in/mzakiyuddin/).
