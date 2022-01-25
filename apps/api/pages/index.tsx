@@ -1,6 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-
-export default function Home() {
-  return <div>Hai</div>;
+export default async function getServerSideProps() {
+  return {
+    redirect: {
+      permanent: true,
+      destination: "https://docs.merawathafalan.my.id/",
+    },
+  };
 }
