@@ -10,7 +10,7 @@ function CheckQueryInput(
   const modeList = ["juz", "surah"];
 
   if (modeList.indexOf(mode) < 0)
-    return { errorInput: { message: "Wrong mode" } };
+    return { errorInput: { message: "Wrong mode, juz or surah only" } };
 
   // check select array
   // if juz, maximal 30
@@ -24,7 +24,11 @@ function CheckQueryInput(
     : (selectOutOfIndex = false || selectOutOfIndex);
 
   if (selectOutOfIndex)
-    return { errorInput: { message: "Select out of index" } };
+    return {
+      errorInput: {
+        message: `Select out of index, maximal ${mode} is ${rangeMax}`,
+      },
+    };
 
   return { errorInput: null };
 }
