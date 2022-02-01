@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 😉 Pendahuluan
+# ✨ Pendahuluan
 
 Salam. Semoga Allah selau menjaga kita.
 
@@ -14,13 +14,14 @@ Merawat Hafalan menyediakan rest API yang bisa digunakan developer untuk membuat
 
 API yang tersedia saat ini:
 
-- [Sambung Ayat](/docs/api/sambung-ayat)
+- [Tebak Ayat Setelahnya](/docs/api/tebak-ayat-setelahnya)
+- [Tebak Ayat Sebelumnya](/docs/api/tebak-ayat-setelahnya)
+- [Tebak Surah](/docs/api/tebak-surah)
+- [Tebak Juz](/docs/api/tebak-juz)
 
-API yang akan datang:
+## Tambahan
 
-- Ayat Sebelumnya
-- Tebak Surah
-- Tebak Juz
+Sangat disarankan untuk menginstall [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh) di browser desktop untuk membuat tampilan JSON lebih rapi.
 
 ## Kontak
 
