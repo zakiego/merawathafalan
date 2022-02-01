@@ -6,6 +6,10 @@ sidebar_position: 1
 
 Teknologi yang digunakan dalam membangun project ini:
 
+### Al-Quran
+
+- [Quran.com](https://quran.api-docs.io/v4/getting-started/introduction)
+
 ### Database
 
 - [Supabase](https://supabase.io/)
