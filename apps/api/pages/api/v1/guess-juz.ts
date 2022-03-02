@@ -3,8 +3,10 @@ import { GetDataJuz } from "~/functions/GetData";
 import QueryParser from "~/functions/QueryParser";
 import CreateQuestionGuessJuz from "~/functions/question-maker/CreateQuestionGuessJuz";
 import { AyatQuestion } from "~/lib/AyatType";
+import AllowNextCors from "~/lib/NextCors";
 
 async function GuessJuz(req, res) {
+  await AllowNextCors(req, res);
   const { amount, select } = QueryParser(req);
 
   if (select.length < 4)

@@ -3,8 +3,10 @@ import { GetDataSurah } from "~/functions/GetData";
 import QueryParser from "~/functions/QueryParser";
 import CreateQuestionGuessSurah from "~/functions/question-maker/CreateQuestionGuessSurah";
 import { AyatQuestion } from "~/lib/AyatType";
+import AllowNextCors from "~/lib/NextCors";
 
 async function GuessSurah(req, res) {
+  await AllowNextCors(req, res);
   const { amount, select } = QueryParser(req);
 
   if (select.length < 4)

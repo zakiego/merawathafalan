@@ -4,8 +4,10 @@ import { LoopCreateQuestion } from "~/functions/LoopCreateQuestion";
 import QueryParser from "~/functions/QueryParser";
 import CreateQuestionVerseBefore from "~/functions/question-maker/CreateQuestionVerseBefore";
 import { AyatQuestion } from "~/lib/AyatType";
+import AllowNextCors from "~/lib/NextCors";
 
 async function VerseBefore(req, res) {
+  await AllowNextCors(req, res);
   const { amount, select, mode } = QueryParser(req);
 
   const { errorInput } = CheckQueryInput(amount, select, mode);
