@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 export default function QuizResultButton() {
   const router = useRouter();
 
+  //
   function clearCookiesBackHome() {
     Cookies.remove("amount");
     Cookies.remove("select");
@@ -26,7 +27,7 @@ export default function QuizResultButton() {
       <a href="/app">
         <button
           // onClick={() => clearCookiesBackHome()}
-          className="btn-outline w-full"
+          className="btn-outline mt-4 w-full"
         >
           Beranda
         </button>
