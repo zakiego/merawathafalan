@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 export default function QuizResultButton() {
   const router = useRouter();
 
-  //
   function clearCookiesBackHome() {
     Cookies.remove("amount");
     Cookies.remove("select");
