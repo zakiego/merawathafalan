@@ -15,14 +15,16 @@ export default async function ProfilePartHistory(
   }
 
   const page = parseInt(<string>req.query.page) || 0;
-  const offset = page == 0 ? 0 : 1;
+  const take = 5;
+  const offset = page == 0 ? 0 : page * take;
+
   const data = await prisma.history.findMany({
     where: {
       userId,
     },
-    // orderBy: [{ id: "desc" }],
-    skip: page,
-    take: 5,
+    orderBy: [{ id: "desc" }],
+    skip: offset,
+    take: take,
   });
 
   return res.json({ data });
