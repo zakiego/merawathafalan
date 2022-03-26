@@ -13,7 +13,8 @@ export default function QuizAmount() {
   const router = useRouter();
 
   async function submitHandler() {
-    Cookies.set("amount", amount as unknown as string);
+    const checkAmount = amount == 0 ? 1 : amount;
+    Cookies.set("amount", checkAmount as unknown as string);
     router.push("/app/quiz/play");
   }
 
