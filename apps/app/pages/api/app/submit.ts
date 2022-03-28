@@ -45,6 +45,9 @@ export default async function helloAPI(
 
   // add to historySummary
   const updateSummaryHistory = prisma.historySummary.updateMany({
+    where: {
+      userId: userId,
+    },
     data: {
       countTrain: {
         increment: 1,
