@@ -15,17 +15,27 @@ export default async function ProfilePartHistory(
   }
 
   const page = parseInt(<string>req.query.page) || 0;
-  const take = 5;
+  const take = 10;
   const offset = page == 0 ? 0 : page * take;
 
   const data = await prisma.history.findMany({
     where: {
       userId,
     },
+    select: {
+      id: true,
+      point: true,
+      countTrue: true,
+      countFalse: true,
+      timeSecond: true,
+      createdAt: true,
+    },
     orderBy: [{ id: "desc" }],
     skip: offset,
     take: take,
   });
 
-  return res.json({ data });
+  const isLastPage = data.length < take ? true : false;
+
+  return res.json({ data, isLastPage });
 }
