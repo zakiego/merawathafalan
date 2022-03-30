@@ -29,7 +29,7 @@ export default function QuizAyatModeList({
   }
 
   return (
-    <div className="mt-3 space-y-6">
+    <div className="mt-3 mb-28 space-y-6">
       {note() && (
         <div className="mx-auto max-w-max rounded-md bg-primary/90 px-4 py-1.5 text-center">
           <p className="text-sm text-white">catatan: {note()}</p>
