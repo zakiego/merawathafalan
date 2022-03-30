@@ -13,7 +13,7 @@ import QuizTopNavbar from "~/components/Quiz/QuizTopNavbar";
 
 interface Props {
   showTab: string[];
-  modeQuiz: string;
+  modeQuiz: "sambung-ayat" | "tebak-ayat-sebelum" | "tebak-surah" | "tebak-juz";
 }
 
 export default function QuizMode({ showTab, modeQuiz }: Props) {
@@ -63,6 +63,7 @@ export default function QuizMode({ showTab, modeQuiz }: Props) {
             menu={menu}
             addState={addState}
             selectState={selectState}
+            modeQuiz={modeQuiz}
           />
           <QuizFloatSelectAyatMode
             modeQuiz={modeQuiz}
