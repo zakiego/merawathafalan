@@ -4,6 +4,8 @@ import {
 } from "~/helper/time";
 import { TypeLastHistoryData, useLastHistory } from "~/lib/swr";
 
+import { SkeletonTable } from "../Skeleton";
+
 export default function AppLastActivityHistory({
   timezone,
 }: {
@@ -31,11 +33,8 @@ export default function AppLastActivityHistory({
         <tbody className="divide-y-2">
           {!history && (
             <>
-              <SkeletonTable />
-              <SkeletonTable />
-              <SkeletonTable />
-              <SkeletonTable />
-              <SkeletonTable />
+              <SkeletonTable amount={3} />
+              <SkeletonTable amount={3} />
             </>
           )}
 
@@ -70,10 +69,6 @@ export default function AppLastActivityHistory({
   );
 }
 
-const Skeleton = () => {
-  return <div className="skeleton my-1 h-5 w-full" />;
-};
-
 const mockData = [
   { date: "22 Juni 2021", amount: 30, accuracy: 100 },
   { date: "22 Juni 2021", amount: 30, accuracy: 70 },
@@ -91,25 +86,3 @@ function accuracyColor(accuracy: number) {
   }
   return "#DE6B59";
 }
-
-const SkeletonTable = () => {
-  return (
-    <tr className="text-center">
-      <td className="py-3">
-        <div className="px-8">
-          <Skeleton />
-        </div>
-      </td>
-      <td className="py-3">
-        <div className="px-8">
-          <Skeleton />
-        </div>
-      </td>
-      <td className="py-3">
-        <div className="mx-auto w-16 rounded-lg py-[4px] text-sm">
-          <Skeleton />
-        </div>
-      </td>
-    </tr>
-  );
-};

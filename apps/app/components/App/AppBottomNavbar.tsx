@@ -59,10 +59,10 @@ const listMenu = [
   //   iconActive: HiChartBar,
   //   iconInactive: HiOutlineChartBar,
   // },
-  // {
-  //   name: "Profile",
-  //   link: "/app/profile",
-  //   iconActive: HiUser,
-  //   iconInactive: HiOutlineUser,
-  // },
+  {
+    name: "Profile",
+    link: "/app/profile",
+    iconActive: HiUser,
+    iconInactive: HiOutlineUser,
+  },
 ];

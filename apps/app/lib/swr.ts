@@ -70,3 +70,38 @@ export function useHistoryToday(link: string) {
     error,
   };
 }
+
+export interface TypeSumHistory {
+  data: {
+    countTrain: number;
+    sumPoint: number;
+    sumTrue: number;
+    sumFalse: number;
+    sumTimeSecond: number;
+  };
+}
+
+export interface TypePartHistory {
+  data: {
+    userId: string;
+    id: number;
+    point: number;
+    countTrue: number;
+    countFalse: number;
+    timeSecond: number;
+    createdAt: string;
+  }[];
+  isLastPage: boolean;
+}
+
+export function useSumHistory(link: string) {
+  const resp = useSWRImmutable(link, fetcher);
+
+  const data: TypeSumHistory = resp.data;
+  const error = resp.error;
+
+  return {
+    data,
+    error,
+  };
+}
