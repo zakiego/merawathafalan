@@ -59,7 +59,7 @@ export default function AppProfilePartHistory({
             </th>
             <th className="bg-gray-100 py-2 font-normal">Soal</th>
             <th className="bg-gray-100 py-2 font-normal">Benar</th>
-            <th className="bg-gray-100 py-2 font-normal">Poin</th>
+
             <th className="rounded-r-lg bg-gray-100 py-2 font-normal">
               Akurasi
             </th>
@@ -86,9 +86,6 @@ export default function AppProfilePartHistory({
                   </td>
                   <td className="py-3">{amount}</td>
                   <td className="py-3">{item.countTrue}</td>
-                  <td className="py-3">
-                    {item.countTrue * 10 > 0 ? `+${item.countTrue * 10}` : "0"}
-                  </td>
                   <td className="py-3">
                     <div
                       className="mx-auto w-16 rounded-lg py-[4px]"
