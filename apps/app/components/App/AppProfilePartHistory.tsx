@@ -68,8 +68,8 @@ export default function AppProfilePartHistory({
         <tbody className="divide-y-2">
           {!history && (
             <>
-              <SkeletonTable amount={5} />
-              <SkeletonTable amount={5} />
+              <SkeletonTable amount={4} />
+              <SkeletonTable amount={4} />
             </>
           )}
 
