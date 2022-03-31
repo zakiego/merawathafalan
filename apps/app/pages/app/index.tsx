@@ -10,7 +10,7 @@ export default function AppIndex() {
   if (!data) return <div />;
 
   return (
-    <div className="text-black">
+    <div>
       <AppTopNavbar />
       <AppMain
         name={data.user.name}

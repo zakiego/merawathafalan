@@ -1,8 +1,7 @@
-import { useRouter } from "next/router";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 import AppBottomNavbar from "~/components/App/AppBottomNavbar";
-import AppMain from "~/components/App/AppMain";
+import AppProfile from "~/components/App/AppProfile";
 import AppTopNavbar from "~/components/App/AppTopNavbar";
 
 export default function Profile() {
@@ -11,9 +10,9 @@ export default function Profile() {
   if (!data) return <div />;
 
   return (
-    <div className="text-black">
-      <AppTopNavbar image={data?.user?.image} />
-      <AppMain name={data.user?.name} />
+    <div>
+      <AppTopNavbar />
+      <AppProfile name={data.user.name} image={data.user.image} />
       <AppBottomNavbar />
     </div>
   );
