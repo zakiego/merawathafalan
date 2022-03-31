@@ -39,6 +39,13 @@ export default function AppLastActivityCard() {
 
   const today: TypeHistoryTodayData = data.data;
 
+  const filterTime =
+    today?.sumTimeSecond > 60
+      ? Math.floor(today.sumTimeSecond / 60)
+      : today.sumTimeSecond;
+
+  const timeFormat = today.sumTimeSecond > 60 ? "Menit" : "Detik";
+
   return (
     <div className="mt-5 rounded-2xl bg-white py-4 shadow-lg">
       <div className="flex justify-around">
@@ -54,8 +61,8 @@ export default function AppLastActivityCard() {
         </div>
         <div className="flex flex-col items-center">
           <HiClock className="h-8 w-8 text-yellow-600 md:h-10 md:w-10" />
-          <p className="mt-2 font-semibold md:text-lg">{today.sumTimeSecond}</p>
-          <p className="text-xs opacity-70 md:text-sm">Menit</p>
+          <p className="mt-2 font-semibold md:text-lg">{filterTime}</p>
+          <p className="text-xs opacity-70 md:text-sm">{timeFormat}</p>
         </div>
       </div>
     </div>
