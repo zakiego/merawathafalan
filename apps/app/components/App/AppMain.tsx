@@ -25,17 +25,21 @@ export default function AppMain(props: Props) {
               <h4 className="text-sm opacity-75 md:text-base">
                 Selamat datang,
               </h4>
-              <h1 className="text-lg font-semibold md:text-xl">{props.name}</h1>
+              <h1 className="text-lg font-semibold md:text-xl">
+                {props?.name}
+              </h1>
             </div>
             <div className="flex items-center justify-center rounded-full bg-white p-0.5">
-              <Image
-                className="scale-75 rounded-full md:scale-100"
-                src={props.image as string}
-                height={70}
-                width={70}
-                quality={100}
-                alt="Profile Image"
-              />
+              {props.image && (
+                <Image
+                  className="scale-75 rounded-full md:scale-100"
+                  src={props?.image as string}
+                  height={70}
+                  width={70}
+                  quality={100}
+                  alt="Profile Image"
+                />
+              )}
             </div>
           </div>
 
