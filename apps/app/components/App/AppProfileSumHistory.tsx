@@ -7,23 +7,31 @@ export default function AppProfileSumHistory() {
 
   if (error) return <div className="mt-7">Oops! Something went wrong :(</div>;
 
+  function checkAccuracy() {
+    if (data.data.countTrain == 0) {
+      return data.data.countTrain + "%";
+    }
+
+    return (
+      Math.floor(
+        (data?.data?.sumTrue / (data?.data?.sumTrue + data?.data?.sumFalse)) *
+          100,
+      ) + "%"
+    );
+  }
+
   return (
     <div className="mt-8 flex justify-around">
       <div className="text-center">
         <div className="font-semibold md:text-lg">
-          {(data &&
-            Math.floor(
-              (data?.data?.sumTrue /
-                (data?.data?.sumTrue + data?.data?.sumFalse)) *
-                100,
-            ) + "%") || <Skeleton />}
+          {data ? checkAccuracy() : <Skeleton />}
         </div>
         <div className="text-xs opacity-70 md:text-sm">Akurasi</div>
       </div>
 
       <div className="text-center">
         <div className="font-semibold md:text-lg">
-          {data?.data?.sumPoint || <Skeleton />}
+          {data?.data.sumPoint.toString() || <Skeleton />}
         </div>
 
         <div className="text-xs opacity-70 md:text-sm">Poin</div>
