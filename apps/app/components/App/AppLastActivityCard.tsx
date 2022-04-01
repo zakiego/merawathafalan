@@ -13,23 +13,23 @@ export default function AppLastActivityCard() {
         <div className="flex justify-around">
           <div className="flex flex-col items-center">
             <HiHeart className="h-8 w-8  text-[#DE6B59] md:h-10 md:w-10" />
-            <p className="mt-2 font-semibold md:text-lg">
+            <div className="mt-2 font-semibold md:text-lg">
               <Skeleton />
-            </p>
+            </div>
             <p className="text-xs opacity-70 md:text-sm">Latihan</p>
           </div>
           <div className="flex flex-col items-center">
             <HiLightningBolt className="h-8 w-8 text-[#49B572]  md:h-10 md:w-10" />
-            <p className="mt-2 font-semibold md:text-lg">
+            <div className="mt-2 font-semibold md:text-lg">
               <Skeleton />
-            </p>
+            </div>
             <p className="text-xs opacity-70 md:text-sm">Poin</p>
           </div>
           <div className="flex flex-col items-center">
             <HiClock className="h-8 w-8 text-yellow-600 md:h-10 md:w-10" />
-            <p className="mt-2 font-semibold md:text-lg">
+            <div className="mt-2 font-semibold md:text-lg">
               <Skeleton />
-            </p>
+            </div>
             <p className="text-xs opacity-70 md:text-sm">Menit</p>
           </div>
         </div>
