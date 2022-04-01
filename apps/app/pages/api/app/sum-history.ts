@@ -27,5 +27,17 @@ export default async function ProfileSumHistory(
     },
   });
 
+  if (data == null) {
+    return res.json({
+      data: {
+        countTrain: 0,
+        sumPoint: 0,
+        sumTrue: 0,
+        sumFalse: 0,
+        sumTimeSecond: 0,
+      },
+    });
+  }
+
   return res.json({ data });
 }

@@ -24,6 +24,7 @@ export default function AppProfilePartHistory({
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    history?.isLastPage && setIsLastPageHistory(true);
     history?.data.length > 0 ? setListHistory(history.data) : "";
   }, [history]);
 
