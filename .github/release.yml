@@ -1,0 +1,17 @@
+changelog:
+  categories:
+    - title: App Changes 🎉
+      labels:
+        - "area: App"
+
+    - title: API Changes 🛠
+      labels:
+        - "area: API"
+
+    - title: Documentation Changes 📄
+      labels:
+        - "area: documentation"
+
+    - title: Other Changes
+      labels:
+        - "*"
