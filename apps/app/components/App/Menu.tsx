@@ -32,7 +32,12 @@ export default function Menu() {
           <div className="btn-menu-animation rounded-lg py-3 px-4 hover:bg-red-100/70">
             <button
               className="w-full text-left font-semibold"
-              onClick={() => signOut()}
+              onClick={() =>
+                signOut({
+                  redirect: true,
+                  callbackUrl: "/",
+                })
+              }
             >
               Sign Out
             </button>
