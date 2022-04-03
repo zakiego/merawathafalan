@@ -1,42 +1,29 @@
-# Merawat Hafalan
+# NextJS with TypeScript and Tailwind CSS
 
-Merawat hafalan adalah sebuah web app sederhana berbentuk kuis untuk melatih dan memperkuat hafalan Al-Qur'an.
+This example shows how to use [TypeScript](https://nextjs.org/docs/basic-features/typescript) andd [Tailwind CSS](https://tailwindcss.com/) with Next.js.
 
-Repository menganut skema monorepo yang berjalan di atas [Turborepo](https://turborepo.org/) v1.
+Features:
 
-## Bagian
+- Jest
+- Prettier
+- Eslint
 
-Berikut beberapa framework yang ada di folder `apps` :
+## Deploy your own
 
-- `home`
-  [merawathafalan.my.id](https://merawathafalan.my.id) dibangun dengan [Next.js](https://nextjs.org/)
-- `app`
-  [app.merawathafalan.my.id](https://app.merawathafalan.my.id) dibangun dengan [Next.js](https://nextjs.org/)
-- `api`
-  [dev.merawathafalan.my.id](https://dev.merawathafalan.my.id) dibangun dengan [Next.js](https://nextjs.org/)
-- [`docs`](#home)
-  [docs.merawathafalan.my.id](https://docs.merawathafalan.my.id) dibangun dengan [Docusaurus](https://docusaurus.io/)
+Deploy the example using [Vercel](https://vercel.com):
 
-## Home
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/zakiego/nextjs-typescript-tailwindcss-starter&project-name=with-typescript-tailwindcss&repository-name=with-typescript-tailwindcss)
 
-[merawathafalan.my.id](https://merawathafalan.my.id)
+## How to use
 
-Halaman ini merupakan tampilan depan.
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-## App
+```bash
+npx create-next-app --example https://github.com/zakiego/nextjs-typescript-tailwindcss-starter with-typescript-tailwindcss-app
 
-[app.merawathafalan.my.id](https://app.merawathafalan.my.id)
+or
 
-App adalah bagian utama aplikasi berjalan
+yarn create next-app --example https://github.com/zakiego/nextjs-typescript-tailwindcss-starter with-typescript-tailwindcss-app
+```
 
-## API
-
-[dev.merawathafalan.my.id](https://dev.merawathafalan.my.id)
-
-API dikhususkan pada subdomain ini untuk membuatnya tetap rapi. Utamanya saat terjadi perubahan versi.
-
-## Docs
-
-[docs.merawathafalan.my.id](https://docs.merawathafalan.my.id)
-
-Dokumentasi untuk penggunaan API dan lain-lain.
+Deploy it to the cloud with [Vercel](https://vercel.com/new) ([Documentation](https://nextjs.org/docs/deployment)).
