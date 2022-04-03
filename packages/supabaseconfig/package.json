@@ -1,7 +1,0 @@
-{
-  "name": "supabaseconfig",
-  "version": "0.0.0",
-  "dependencies": {
-    "@supabase/supabase-js": "^1.29.3"
-  }
-}
